@@ -1,0 +1,10 @@
+.navBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 90px;
+  width: 95vw;
+  border: 2px #0e0e0e solid;
+  background-color:#0e0e0e ;
+}

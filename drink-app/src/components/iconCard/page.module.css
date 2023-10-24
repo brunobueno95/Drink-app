@@ -1,0 +1,95 @@
+.bulletPoint {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0 25px;
+  align-items: center;
+  height: auto;
+  width: 210px;
+  box-shadow: 0px 2px 8px rgb(0, 0, 0);
+  background-color: #0e0e0e;
+  cursor: pointer;
+}
+
+.icon {
+  color: #e400ff;
+  font-size: 40px;
+  background-color: #0e0e0e;
+  padding-top: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 4px red; */
+}
+
+.title {
+  font-family: Bebas Neue, sans-serif;
+  color: rgb(253, 253, 253);
+  font-size: 26px;
+  margin-top: 5px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.txtContent {
+  font-size: 16px;
+  text-align: center;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.bulletPoint:hover .txtContent {
+  max-height: 200px; /* Adjust to your desired value */
+  opacity: 1;
+}
+
+@media (max-width: 1100px) {
+  .bulletPoint {
+    width: 100px;
+    height: 200px;
+  }
+  .title {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .bulletPoint {
+    width: 120px;
+    padding: 0;
+    height: 160px;
+    padding:0px 10px;
+
+  }
+  .icon {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }.txtContent {
+    font-size: 12px;
+    opacity: 0;
+    max-height: 0;
+  }
+  .bulletPoint:hover{
+    height: auto;
+  }
+  .bulletPoint.txtContent:hover {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bulletPoint {
+    width: 50%;
+    height: auto;
+    padding: 10px 80px;
+  }
+  .bulletPoint.txtContent:hover {
+    opacity: 1;
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,32 @@
+.drinkCard {
+  height: 350px;
+  width: 256px;
+ 
+  box-shadow: 0 0px 4px rgb(0, 0, 0);
+  overflow: hidden;
+  position: relative;
+}
+
+.blackLayer{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+@media (max-width:430px) {
+  .drinkCard{
+    width:100%;
+    overflow: hidden;
+  }
+  .img{
+    height: 100%;
+    width: 100%;
+  }
+  
+}

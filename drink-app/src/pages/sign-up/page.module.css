@@ -1,0 +1,40 @@
+.arrowBck{
+    font-size: 35px;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    position: absolute;
+    left:20px;
+    top: 15px;
+    z-index: 9;
+}
+
+.arrowBck:hover{
+    color: #f06cff;
+}
+.signUpPg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    min-width: 100vw;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .imgBgSignUp {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .darkLayer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+  }
+  

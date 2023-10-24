@@ -1,0 +1,146 @@
+h1 {
+  font-family: Bebas Neue, sans-serif;
+  color: rgb(253, 253, 253);
+  font-size: 90px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  color: rgb(253, 253, 253);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 20px;
+  height: 65vh;
+
+  width: 80vw;
+  padding: 0 900px;
+  /* border: 11px red solid; */
+}
+
+.textBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.imgHero {
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  margin: auto 0;
+  justify-self: flex-end;
+
+  /* border: red solid 3px; */
+}
+.pInContainer {
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  color: rgb(253, 253, 253);
+
+  font-weight: normal;
+}
+.btnJoin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 120px;
+  border: #e400ff solid 1px;
+  border-radius: 5px;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 1px 2px #e400ff;
+  cursor: pointer;
+}
+
+.btnJoin:hover{
+  box-shadow: 0 1px 15px #e400ff; 
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 80px;
+  }
+  .pInContainer {
+    font-size: 16px;
+  }
+
+  .imgHero{
+    height: 300px;
+    width: 300px;
+  }
+  .btnJoin{
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+  }
+}
+
+@media (max-width:800px) {
+  .heroSection{
+    width: 85vw;
+   height: auto;
+    padding: 10px 200px;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+  }
+  .imgHero{
+    height: 250px;
+    width: 250px;
+    margin: auto 0;
+    padding: 0;
+    margin-left: 20px;
+    position: absolute;
+    left: 480px;
+   
+    
+  }
+
+  .textBox{
+    width: 60%;
+ 
+  }
+  
+}
+
+@media (max-width:550px) {
+  .imgHero{
+    display: none;
+  }
+  .textBox{
+    width: 100%;
+    
+    align-items: center;
+  }
+  h1{
+    font-size: 65px;
+  }
+  
+}
+
+
+@media (max-width:400px) {
+  .heroSection{
+    padding: 5px 100px;
+  }
+  
+}
+
+@media(max-width:350px){
+  h1{
+    font-size: 40px;
+    padding: 0 80px;
+  }
+}

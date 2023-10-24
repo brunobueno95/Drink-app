@@ -1,0 +1,14 @@
+
+.gridIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+   align-items: flex-start;
+   background-color: #00000070;
+    width: 100%;
+    min-height:35vh;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+  backdrop-filter: blur(2px);
+  }

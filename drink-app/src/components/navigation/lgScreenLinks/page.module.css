@@ -1,0 +1,25 @@
+.pLinks {
+  font-family: Roboto, sans-serif;
+  color: rgb(253, 253, 253);
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.containerLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+}
+
+.pLinks:hover {
+  color: #f06cff;
+}
+
+@media (max-width:720px) {
+    .containerLinks{
+        display: none;
+    }
+    
+}
